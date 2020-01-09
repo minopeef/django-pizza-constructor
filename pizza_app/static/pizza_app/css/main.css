@@ -31,6 +31,7 @@ h2 {
 }
 
 main {
+  min-width: 650px;
   color: #6b584d;
 }
 
