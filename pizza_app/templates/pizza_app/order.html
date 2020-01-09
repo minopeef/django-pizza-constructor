@@ -1,0 +1,31 @@
+{% extends "pizza_app/base.html" %} {% block content%}
+<div class="order">
+  <h2>Order № {{ order_num }}</h2>
+  <h3>Total price is: {{ order_price }}$</h3>
+
+  <div>
+    {% for order_option in order_options %}
+    <div>
+      {{ order_option.option.title }}: {{ order_option.price }}$
+    </div>
+    {% endfor %}
+  </div>
+
+  <div>
+    {% for order_topping in order_toppings %}
+    <div>
+      {{ order_topping.topping.title }}: {{ order_topping.amount }}00 grams
+    </div>
+    {% endfor %}
+  </div>
+
+  <h3>Please, fill in the details for placing an order:</h3>
+  <form action="" method="post">
+    {% csrf_token %}
+    <table>
+      {{ form.as_table }}
+    </table>
+    <input type="submit" value="Confirm" />
+  </form>
+</div>
+{% endblock content %}

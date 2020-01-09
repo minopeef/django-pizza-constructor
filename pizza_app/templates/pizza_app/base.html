@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'pizza_app/images/favicon.ico' type='image/x-icon' %}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'pizza_app/css/main.css' %}"
+    />
+
+    <title>Pizza maker</title>
+  </head>
+  <body>
+    <header>  
+      <a href={% url 'home' %} > 
+        <img
+        class="pizza-img"
+        src="{% static 'pizza_app/images/pizza.svg' %}"
+        alt="pizza"
+        />
+      </a>      
+      <h1>Pizza maker</h1> 
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+
+      {% if messages %}
+        <div class="messages">
+          {% for message in messages %}
+            <div{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </main>
+  </body>
+</html>

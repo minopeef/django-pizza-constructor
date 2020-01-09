@@ -1,0 +1,53 @@
+{% extends "pizza_app/base.html" %} {% block content%}
+<form method="POST" action="">
+  {% csrf_token %}
+  <h2>Construct your own pizza</h2>
+  <small>Ingredient prices per 100 grams in $</small>
+
+  {% for option_group in option_groups %}
+  <fieldset>
+    <legend>
+      {{ option_group.title }}
+    </legend>
+    {% for option in option_group.options.all %}
+    <input
+      type="radio"
+      id="{{  option.title }}"
+      name="{{ option_group.title }}"
+      value="{{  option.title }}"
+      required
+    />
+    <label for="{{  option.title }}"
+      >{{ option.title }}: {{ option.price }}</label
+    >
+    {% endfor %}
+  </fieldset>
+  {% endfor %}
+
+  <div class="toppings">
+    {% for topping_group in topping_groups %}
+    <fieldset>
+      <legend>
+        {{ topping_group.title }}
+      </legend>
+      {% for topping in topping_group.toppings.all %}
+      <div>
+        <input
+          type="number"
+          id="{{  topping.title }}"
+          name="{{ topping.title }}"
+          min="1"
+          max="5"
+        />
+        <label for="{{  topping.title }}">
+          {{ topping.title }}: {{ topping.price }}
+        </label>
+      </div>
+      {% endfor %}
+    </fieldset>
+    {% endfor %}
+  </div>
+  <!-- <div class="total-price"><strong>Total: </strong><span>100</span>$</div> -->
+  <input type="submit" value="Order" />
+</form>
+{% endblock content %}
