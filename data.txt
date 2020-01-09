@@ -1,0 +1,8 @@
+options = {	
+    "size": [["Small", 38], ["Medium", 62], ["Large", 86]],	
+    "crust": [["Black crisp", 9], ["White crisp", 5], ["Thin crisp", 12], ["Philadelphia", 14]],	
+    "meat": [["Chicken", 16], ["Pork", 18], ["Ham", 22], ["Bacon", 21], ["Peperoni", 25], ["Tuna", 48],  ["Salmon", 56]],	
+    "vegetables": [["Pineapple", 15], ["Corn", 12], ["Olives", 12], ["Tomatoes", 15], ["Green pepper", 21], ["Jalapeno", 25], ["Champignons", 12]],	
+    "cheese": [["Cheddar", 38], ["Mozzarella", 26], ["Feta", 21], ["Mascarpone", 24], ["Parmesan", 35]],
+    "sauses": [["Al'fredo sauce", 10], ["Garlic sauce", 5], ["Spicy tomato sauce", 15], ["BBQ sauce", 12]],	
+}
