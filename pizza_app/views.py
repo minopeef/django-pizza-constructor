@@ -49,7 +49,7 @@ def order(request, order_id):
             customer_email = customer_order.customer_email
 
             subject = f"Order №{order_id}"
-            message = f"Your ordered a pizza at {order_time}\n\n"
+            message = f"You have ordered a pizza at {order_time}\n\n"
             message += f"For a total price of {order_price}$\n"
             message += "You choosed: \n"
             for order_option in order_options:
