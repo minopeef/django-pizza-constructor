@@ -10,10 +10,13 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 
 1. Activate virtual environment
 2. Configure Gmail account tp allow login from less secure apps.
-3. Provide Email and Password in settings.py file
-4. Run in the terminal `python manage.py migrate`.
-5. Start the development server by running the command `python manage.py runserver`
-6. Open your web browser and visit http://127.0.0.1:8000/
+3. Provide your Email and Password in settings.py file.
+4. Install dependencies `pip install -r requirements.txt`
+5. Run in the terminal `python manage.py migrate`.
+6. Create superuser in the terminal `python manage.py createsuperuser`.
+7. Start the development server by running the command `python manage.py runserver`
+8. Open your web browser and visit http://127.0.0.1:8000/
+9. Populate db with your options and toppings.
 
 ## Ideas for improvements
 
