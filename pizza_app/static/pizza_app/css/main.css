@@ -5,10 +5,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  max-width: 900px;
   margin: 0 auto;
   padding: 1em;
-  min-width: 866px;
 }
 
 h1 {
@@ -32,6 +30,8 @@ h2 {
 }
 
 main {
+  max-width: 900px;
+  min-width: 866px;
   color: #6b584d;
 }
 
