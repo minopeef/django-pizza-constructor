@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -124,7 +124,7 @@ STATIC_URL = '/static/'
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
-STATICFILES_STORAGE = 'whitenoise.storage.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Media
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
@@ -137,3 +137,5 @@ EMAIL_USE_TLS = True
 # EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_PASSWORD")
 EMAIL_HOST_USER = "django.pizza.constructor@gmail.com"
 EMAIL_HOST_PASSWORD = "pizzaapp123"
+
+django_heroku.settings(locals())
