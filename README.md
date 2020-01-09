@@ -9,8 +9,8 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 ## Quick start
 
 1. Activate virtual environment
-2. Configure Gmail account tp allow login from less secure apps.
-3. Provide your Email and Password in settings.py file.
+2. Configure Gmail account and allow login from less secure apps.
+3. Provide your Email and Password in environment variables or in settings.py file.
 4. Install dependencies `pip install -r requirements.txt`
 5. Run in the terminal `python manage.py migrate`.
 6. Create superuser in the terminal `python manage.py createsuperuser`.
