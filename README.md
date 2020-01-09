@@ -4,7 +4,7 @@ Pizza-constructor is a Django app to constructor your own pizza from available i
 
 ## Live example
 
-View demo [here at heroku](https://https://pizza-constructor.herokuapp.com/)
+View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 
 ## Quick start
 
