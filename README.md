@@ -16,11 +16,10 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 6. Create superuser in the terminal `python manage.py createsuperuser`.
 7. Start the development server by running the command `python manage.py runserver`
 8. Open your web browser and visit http://127.0.0.1:8000/
-9. Populate sqlite3 database with your options and toppings.
 
 ## Ideas for improvement
 
 - design models schema to follow ACID properties
 - make the home page responsive for mobile users.
-- do not allow more than 500 grams of toppings per pizza.
+- do not allow more than 500-800 grams of toppings per pizza.
 - calculate the order price not only on the back end but also on the client-side.

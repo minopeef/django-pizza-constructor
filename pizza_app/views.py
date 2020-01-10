@@ -60,11 +60,11 @@ def order(request, order_id):
             sender_email = settings.DEFAULT_FROM_EMAIL
             send_mail(subject, message, sender_email,
                       (sender_email, customer_email), fail_silently=False,)
-            messages.success(request, "An email confirmaion has been sent")
+            messages.success(request, "An email confirmaion has been sent!")
         else:
             messages.error(request, "Invalid data")
         # prevents submitting the same data twice
-        return redirect('base')
+        return redirect('message')
     else:
         form = OrderForm()
         context = {
@@ -77,5 +77,6 @@ def order(request, order_id):
         return render(request, f'pizza_app/order.html', context)
 
 
-def base(request):
+def message(request):
+    """To spare creating a new page, just for alerts, we'll reuse base template"""
     return render(request, f'pizza_app/base.html')

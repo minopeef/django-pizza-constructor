@@ -5,9 +5,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.content {
   margin: 0 auto;
   padding: 1em;
   max-width: 900px;
+  min-width: 840px;
 }
 
 h1 {
@@ -31,7 +35,6 @@ h2 {
 }
 
 main {
-  min-width: 650px;
   color: #6b584d;
 }
 
@@ -115,19 +118,7 @@ input[type='submit'] {
   background-color: #f0451a;
   font-family: 'Lobster', cursive;
   font-weight: 100;
-  font-size: 3em;
-  color: white;
-  border-radius: 15px;
-  border: 1px solid white;
-  margin: 15px 0 0 35%;
-  padding: 1em;
-}
-
-input[type='submit'] {
-  background-color: #f0451a;
-  font-family: 'Lobster', cursive;
-  font-weight: 100;
-  font-size: 3em;
+  font-size: 2em;
   color: white;
   border-radius: 15px;
   border: 1px solid white;
