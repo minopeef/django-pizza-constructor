@@ -19,7 +19,8 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 
 ## Ideas for improvement
 
-- design models schema to follow ACID properties
 - make the home page responsive for mobile users.
+- custom 404 page.
 - do not allow more than 500-800 grams of toppings per pizza.
 - calculate the order price not only on the back end but also on the client-side.
+- database normalization.
