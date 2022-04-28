@@ -1,0 +1,408 @@
+[
+  {
+    "model": "pizza_app.optiongroup",
+    "pk": 1,
+    "fields": {
+      "title": "Size"
+    }
+  },
+  {
+    "model": "pizza_app.optiongroup",
+    "pk": 2,
+    "fields": {
+      "title": "Crust"
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 1,
+    "fields": {
+      "option_group": 1,
+      "title": "Small",
+      "price": 38
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 2,
+    "fields": {
+      "option_group": 1,
+      "title": "Medium",
+      "price": 71
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 3,
+    "fields": {
+      "option_group": 1,
+      "title": "Large",
+      "price": 86
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 4,
+    "fields": {
+      "option_group": 2,
+      "title": "Black crisp",
+      "price": 10
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 5,
+    "fields": {
+      "option_group": 2,
+      "title": "White crisp",
+      "price": 5
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 6,
+    "fields": {
+      "option_group": 2,
+      "title": "Thin crisp",
+      "price": 8
+    }
+  },
+  {
+    "model": "pizza_app.option",
+    "pk": 7,
+    "fields": {
+      "option_group": 2,
+      "title": "Philadelphia",
+      "price": 12
+    }
+  },
+  {
+    "model": "pizza_app.toppinggroup",
+    "pk": 1,
+    "fields": {
+      "title": "Meat"
+    }
+  },
+  {
+    "model": "pizza_app.toppinggroup",
+    "pk": 2,
+    "fields": {
+      "title": "Vegetables"
+    }
+  },
+  {
+    "model": "pizza_app.toppinggroup",
+    "pk": 3,
+    "fields": {
+      "title": "Cheese"
+    }
+  },
+  {
+    "model": "pizza_app.toppinggroup",
+    "pk": 4,
+    "fields": {
+      "title": "Sauces"
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 1,
+    "fields": {
+      "topping_group": 1,
+      "title": "Chicken",
+      "price": 16
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 2,
+    "fields": {
+      "topping_group": 1,
+      "title": "Peperoni",
+      "price": 18
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 3,
+    "fields": {
+      "topping_group": 1,
+      "title": "Bacon",
+      "price": 20
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 4,
+    "fields": {
+      "topping_group": 1,
+      "title": "Pork",
+      "price": 22
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 5,
+    "fields": {
+      "topping_group": 1,
+      "title": "Ham",
+      "price": 24
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 6,
+    "fields": {
+      "topping_group": 1,
+      "title": "Tuna",
+      "price": 32
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 7,
+    "fields": {
+      "topping_group": 1,
+      "title": "Salmon",
+      "price": 38
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 8,
+    "fields": {
+      "topping_group": 2,
+      "title": "Pineapple",
+      "price": 12
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 9,
+    "fields": {
+      "topping_group": 2,
+      "title": "Green pepper",
+      "price": 8
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 10,
+    "fields": {
+      "topping_group": 2,
+      "title": "Jalapeno",
+      "price": 10
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 11,
+    "fields": {
+      "topping_group": 2,
+      "title": "Champignons",
+      "price": 13
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 12,
+    "fields": {
+      "topping_group": 2,
+      "title": "Tomatoes",
+      "price": 9
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 13,
+    "fields": {
+      "topping_group": 2,
+      "title": "Olives",
+      "price": 15
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 14,
+    "fields": {
+      "topping_group": 2,
+      "title": "Corn",
+      "price": 14
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 15,
+    "fields": {
+      "topping_group": 3,
+      "title": "Mozzarella",
+      "price": 22
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 16,
+    "fields": {
+      "topping_group": 3,
+      "title": "Mascarpone",
+      "price": 20
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 17,
+    "fields": {
+      "topping_group": 3,
+      "title": "Parmesan",
+      "price": 26
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 18,
+    "fields": {
+      "topping_group": 3,
+      "title": "Cheddar",
+      "price": 32
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 19,
+    "fields": {
+      "topping_group": 3,
+      "title": "Feta",
+      "price": 14
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 20,
+    "fields": {
+      "topping_group": 4,
+      "title": "Spicy tomato sauce",
+      "price": 12
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 21,
+    "fields": {
+      "topping_group": 4,
+      "title": "Al'fredo sauce",
+      "price": 10
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 22,
+    "fields": {
+      "topping_group": 4,
+      "title": "Garlic sauce",
+      "price": 5
+    }
+  },
+  {
+    "model": "pizza_app.topping",
+    "pk": 23,
+    "fields": {
+      "topping_group": 4,
+      "title": "BBQ sauce",
+      "price": 8
+    }
+  },
+  {
+    "model": "pizza_app.order",
+    "pk": 1,
+    "fields": {
+      "customer_name": "",
+      "customer_email": "",
+      "customer_phone_number": "",
+      "created_at": "2020-01-09T10:34:33.763Z"
+    }
+  },
+  {
+    "model": "pizza_app.order",
+    "pk": 2,
+    "fields": {
+      "customer_name": "",
+      "customer_email": "",
+      "customer_phone_number": "",
+      "created_at": "2020-01-09T10:44:26.198Z"
+    }
+  },
+  {
+    "model": "pizza_app.order",
+    "pk": 3,
+    "fields": {
+      "customer_name": "",
+      "customer_email": "",
+      "customer_phone_number": "",
+      "created_at": "2020-01-09T10:46:54.205Z"
+    }
+  },
+  {
+    "model": "pizza_app.order",
+    "pk": 4,
+    "fields": {
+      "customer_name": "Vlad",
+      "customer_email": "vlad.moroshan@gmail.com",
+      "customer_phone_number": "252514",
+      "created_at": "2020-01-09T10:47:04.341Z"
+    }
+  },
+  {
+    "model": "pizza_app.order",
+    "pk": 5,
+    "fields": {
+      "customer_name": "",
+      "customer_email": "",
+      "customer_phone_number": "",
+      "created_at": "2020-01-09T10:54:18.911Z"
+    }
+  },
+  {
+    "model": "pizza_app.order",
+    "pk": 6,
+    "fields": {
+      "customer_name": "Vlad",
+      "customer_email": "vlad.moroshan@gmail.com",
+      "customer_phone_number": "252514",
+      "created_at": "2020-01-09T10:56:31.833Z"
+    }
+  },
+  {
+    "model": "pizza_app.orderoption",
+    "pk": 1,
+    "fields": {
+      "order": 5,
+      "option": 1
+    }
+  },
+  {
+    "model": "pizza_app.orderoption",
+    "pk": 2,
+    "fields": {
+      "order": 5,
+      "option": 4
+    }
+  },
+  {
+    "model": "pizza_app.ordertopping",
+    "pk": 1,
+    "fields": {
+      "order": 3,
+      "topping": 1,
+      "amount": 5
+    }
+  },
+  {
+    "model": "pizza_app.ordertopping",
+    "pk": 2,
+    "fields": {
+      "order": 5,
+      "topping": 1,
+      "amount": 3
+    }
+  }
+]
