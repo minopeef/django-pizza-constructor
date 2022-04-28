@@ -15,7 +15,7 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 3. Activate virtual environment
 4. Install dependencies `pip install -r requirements.txt`
 5. Run in the terminal `python manage.py migrate`.
-6. Run in the terminal ` python manage.py loaddata .\pizza_app\fixtures\initial_data.json`.
+6. Run in the terminal `python manage.py loaddata ./pizza_app/fixtures/initial_data.json`.
 7. Create superuser in the terminal `python manage.py createsuperuser`.
 8. Start the development server by running the command `python manage.py runserver`.
 9. Go to `http://127.0.0.1:8000/`.
