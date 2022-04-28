@@ -1,10 +1,11 @@
+from django.conf import settings
+from django.contrib import messages
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.csrf import csrf_protect
-from django.contrib import messages
-from django.conf import settings
-from django.core.mail import send_mail
-from .models import Option, OptionGroup, Topping, ToppingGroup, Order, OrderOption, OrderTopping
+
 from .forms import OrderForm
+from .models import Option, OptionGroup, Topping, ToppingGroup, Order, OrderOption, OrderTopping
 
 
 @csrf_protect
@@ -49,18 +50,20 @@ def order(request, order_id):
             customer_email = customer_order.customer_email
 
             subject = f"Order №{order_id}"
-            message = f"You have ordered a pizza at {order_time}\n\n"
+            message = f"Dear {customer_name}. You have ordered a pizza at {order_time}\n\n"
             message += f"For a total price of {order_price}$\n"
-            message += "You choosed: \n"
+            message += "You choose: \n"
             for order_option in order_options:
-                message += f" - {order_option.option.title}: { order_option.price }$\n"
+                message += f" - {order_option.option.title}: {order_option.price}$\n"
             for order_topping in order_toppings:
-                message += f" - {order_topping.topping.title}: { order_topping.amount }00 grams\n"
+                message += f" - {order_topping.topping.title}: {order_topping.amount}00 grams\n"
             message += "Your order is ready. Bon appetit!"
             sender_email = settings.DEFAULT_FROM_EMAIL
-            send_mail(subject, message, sender_email,
-                      (sender_email, customer_email), fail_silently=False,)
-            messages.success(request, "An email confirmaion has been sent!")
+            success = send_mail(subject, message, sender_email, (sender_email, customer_email), fail_silently=True)
+            if success:
+                messages.success(request, "An email confirmation has been sent!")
+            else:
+                messages.error(request, "Something went wrong. Failed to send email!")
         else:
             messages.error(request, "Invalid data")
         # prevents submitting the same data twice
