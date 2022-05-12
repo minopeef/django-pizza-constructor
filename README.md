@@ -9,9 +9,10 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 
 ## Usage
 
-1. To be able to send emails from the app you need a Gmail account. Also, do not forget to allow login from less secure
-   apps in your Gmail account.
-2. Provide your Email and Password from Gmail account in environment variables or in settings.py file.
+1. To be able to send emails from the app you need an email account. If you choose Google, you need to
+   configure [Sign in with App Passwords]( https://support.google.com/accounts/answer/185833?hl=en)
+2. Provide your email and password from email account into environment variables `EMAIL_HOST_USER`
+   and `EMAIL_HOST_PASSWORD`.
 3. Activate virtual environment
 4. Install dependencies `pip install -r requirements.txt`
 5. Run in the terminal `python manage.py migrate`.
