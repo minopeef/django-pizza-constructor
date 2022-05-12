@@ -5,7 +5,7 @@ receive a confirmation by email.
 
 ## Live example
 
-View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
+View demo [on heroku](https://pizza-constructor.herokuapp.com/).
 
 ## Usage
 
