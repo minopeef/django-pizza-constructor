@@ -10,9 +10,8 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 ## Usage
 
 1. To be able to send emails from the app you need an email account. If you choose Google, you need to
-   configure [Sign in with App Passwords]( https://support.google.com/accounts/answer/185833?hl=en)
-2. Provide your email and password from email account into environment variables `EMAIL_HOST_USER`
-   and `EMAIL_HOST_PASSWORD`.
+   configure [Sign in with App Passwords]( https://support.google.com/accounts/answer/185833?hl=en).
+2. Then provide your email and password from email account into environment variables `EMAIL_HOST_USER` and `EMAIL_HOST_PASSWORD`.
 3. Activate virtual environment
 4. Install dependencies `pip install -r requirements.txt`
 5. Run in the terminal `python manage.py migrate`.
@@ -25,6 +24,4 @@ View demo [here at heroku](https://pizza-constructor.herokuapp.com/)
 
 - make the home page responsive for mobile users.
 - custom 404 page.
-- do not allow more than 500-800 grams of toppings per pizza.
 - calculate the order price not only on the back end but also on the client-side.
-- database normalization.
