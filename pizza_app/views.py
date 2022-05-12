@@ -59,11 +59,16 @@ def order(request, order_id):
                 message += f" - {order_topping.topping.title}: {order_topping.amount}00 grams\n"
             message += "Your order is ready. Bon appetit!"
             sender_email = settings.DEFAULT_FROM_EMAIL
-            success = send_mail(subject, message, sender_email, (sender_email, customer_email), fail_silently=True)
+            success = send_mail(subject, message,
+                                from_email=sender_email,
+                                recipient_list=[customer_email],
+                                auth_user=settings.EMAIL_HOST_USER,
+                                auth_password=settings.EMAIL_HOST_PASSWORD,
+                                fail_silently=True)
             if success:
                 messages.success(request, "An email confirmation has been sent!")
             else:
-                messages.error(request, "Something went wrong. Failed to send email!")
+                messages.error(request, "Sorry. Something went wrong. Failed to send email!")
         else:
             messages.error(request, "Invalid data")
         # prevents submitting the same data twice
