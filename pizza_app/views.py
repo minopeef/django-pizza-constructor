@@ -58,10 +58,10 @@ def order(request, order_id):
             for order_topping in order_toppings:
                 message += f" - {order_topping.topping.title}: {order_topping.amount}00 grams\n"
             message += "Your order is ready. Bon appetit!"
-            sender_email = settings.DEFAULT_FROM_EMAIL
+
             success = send_mail(subject, message,
-                                from_email=sender_email,
                                 recipient_list=[customer_email],
+                                from_email=settings.DEFAULT_FROM_EMAIL,
                                 auth_user=settings.EMAIL_HOST_USER,
                                 auth_password=settings.EMAIL_HOST_PASSWORD,
                                 fail_silently=True)
